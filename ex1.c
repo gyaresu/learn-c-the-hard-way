@@ -2,8 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-    puts("Hello world.");
-    puts("");
-    puts("&amp");
-    return 0;
+  puts("Hello world.\nBlah.\nPtang.\nWooble.\n");
+
+  return 0;
 }
