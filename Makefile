@@ -1,6 +1,6 @@
 CFLAGS=-Wall -g
 
 all:
-	make ex1
+	make ex1 ex3 lmod
 clean:
-	rm -rf ex1 ex1.dSYM
+	rm -rf ex1 ex3 lmod *.dSYM
