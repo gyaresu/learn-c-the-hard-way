@@ -1,3 +1,6 @@
+# YouCompleteMe config
+.ycm_extra_conf.pyc
+
 # Object files
 *.o
 *.ko
