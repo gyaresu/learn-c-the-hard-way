@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main (int argc, char *argv[])
+{
     // create two arrays we care about
     int ages[] = {23, 43, 12, 89, 2};
     char *names[] = {
@@ -8,9 +9,14 @@ int main (int argc, char *argv[]) {
         "Mary", "John", "Lisa"
     };
 
+    // play with char element vs pointers
+    printf("First character of names[0] == %c\n");
+
+
     // safely get the size of ages
     int count = sizeof(ages) / sizeof(int);
     int i = 0;
+    printf("sizeof(ages) = %lu\nsizeof(int) = %lu\n", sizeof(ages), sizeof(int));
 
     // first way using indexing
     for (i = 0; i < count; ++i) {
