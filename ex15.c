@@ -10,7 +10,7 @@ int main (int argc, char *argv[])
     };
 
     // play with char element vs pointers
-    printf("First character of names[0] == %c\n");
+    // printf("First character of names[0] == %c\n");
 
 
     // safely get the size of ages
@@ -29,6 +29,11 @@ int main (int argc, char *argv[])
     // setup the pointers to the start of the arrays
     int *cur_age = ages;
     char **cur_name = names;
+
+    printf("**curname equals %c\n", **cur_name);
+    printf("*curname equals %s\n", *cur_name);
+    printf("sizeof(cur_age) equals %lu, sizeof(ages) equals %lu\n", sizeof(cur_name), sizeof(ages));
+    printf("---\n");
 
     // second way using pointers
     for (i = 0; i < count; ++i) {
