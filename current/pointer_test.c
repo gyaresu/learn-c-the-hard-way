@@ -8,6 +8,11 @@ int main(int argc, char *argv[])
     char *d[3] = { "First", "Second", "Third"};
     
     int *aa = &a;
+    float *bb = &b;
+
+    float e = a + b;
+    float f = *aa + *bb;
+    float *g = &f;
 
     printf("  a: %i\n", a );
     printf("  b: %f\n", b);
@@ -15,9 +20,20 @@ int main(int argc, char *argv[])
     printf("  d: %pn\n", &d);
     printf(" &d: %pn\n\n", &d);
 
-    printf(" &a: %pn\n", &a);
-    printf("*aa: %d\n", *aa);
-    printf("&aa: %pn\n", &aa);
+    printf("%%pn of  &a: %pn\n", &a);
+    printf("%%i  of *aa: %i\n", *aa);
+    printf("%%pn of &aa: %pn\n\n", &aa);
+
+    printf("  e: %f\n", e);
+    printf("  f: %f\n", f);
+    printf("  %%pn of  g: %pn\n", g);
+    printf("  %%f  of *g: %f\n", *g);
+    printf("  %%pn of &g: %pn\n\n", &g);
+
+    printf("  sizeof(e): %lu\n", sizeof(e));
+    printf("  sizeof(f): %lu\n", sizeof(f));
+    printf("  sizeof(&f): %lu\n", sizeof(&f));
+    printf("  sizeof(g): %lu\n", sizeof(g));
 
     return 0;
 }
