@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 //        printf("Argument %i is %s\n", i, argv[i]);
 //    }
 
+    // wha?
     int a = 42;
     int *b = &a;
     double c = sizeof(b);
