@@ -22,7 +22,8 @@ int main(int argc, char *argv[])
 
     printf("%%pn of  &a: %pn\n", &a);
     printf("%%i  of *aa: %i\n", *aa);
-    printf("%%pn of &aa: %pn\n\n", &aa);
+    printf("%%pn of &aa: %pn\n", &aa);
+    printf("%%pn of &aa: %pn\n\n", aa);
 
     printf("  e: %f\n", e);
     printf("  f: %f\n", f);
