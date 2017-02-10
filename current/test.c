@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 //        printf("Argument %i is %s\n", i, argv[i]);
 //    }
 
-    // wha?
     int a = 42;
     int *b = &a;
     double c = sizeof(b);
@@ -24,7 +23,10 @@ int main(int argc, char *argv[])
     printf("int i   == %i\n", a);
     printf("int &i  == %pn\n", &a);
     printf("int b   == %pn\n", b);
-    printf("int b+1 == %pn\n\n", b+1);
+    printf("int b+1 == %pn\n", b+1);
+    printf("int b+2 == %pn\n", b+2);
+    printf("int b+3 == %pn\n\n", b+3);
+    printf("int &b == %pn\n\n", &b);
 
     printf("sizeof(a) is %lu\n", sizeof(a));
     printf("sizeof(&a) is %lu\n", sizeof(&a));
