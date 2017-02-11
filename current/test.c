@@ -1,8 +1,8 @@
 #include <stdint.h>
 #include <stdio.h>
 
-uint32_t SLEEP = 0xBE;
-uint32_t SLEEP_OSC_PD = 0x04;
+uint8_t SLEEP = 0xBE;
+uint8_t SLEEP_OSC_PD = 0x04;
 
 int main(int argc, char *argv[])
 {
