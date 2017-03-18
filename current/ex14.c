@@ -3,27 +3,28 @@
 #include <string.h>
 
 // forward declarations
-int can_print_it(char ch);
-void print_letters(int len, char arg[]);
+void print_letters(int slen, char arg[]);
 
 void print_arguments(int argc, char *argv[])
 {
     int i = 0;
 
     for (i = 0; i < argc; i++) {
-        print_letters(strlen(argv[i]), argv[i]);
+        char *str = argv[i];
+        int len = strlen(str);
+        print_letters(len, argv[i]);
     }
 }
 
-void print_letters(int len, char arg[])
+void print_letters(int slen, char arg[])
 {
     int i = 0;
 
-    for (i = 0; i < len; i++) {
+    for (i = 0; i < slen; i++) {
         char ch = arg[i];
 
-        if (isalpha((int)ch) || isblank((int)ch)) {
-            printf("'%c' == %d ", ch, ch);
+        if (isalpha((int)ch) || isblank((int)ch) || isdigit((int)ch) || ispunct((int)ch)) {
+            printf("'%c' -- %d ", ch, ch);
         }
     }
 
